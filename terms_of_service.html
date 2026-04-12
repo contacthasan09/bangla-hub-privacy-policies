@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Terms of Service - Bangla Hub</title>
+    <title>Terms of Service | Bangla Hub</title>
     <style>
         * {
             margin: 0;
@@ -14,120 +14,194 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-            padding: 16px;
+            background: linear-gradient(135deg, #E3F2FD 0%, #E8F5E9 100%);
+            padding: 20px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
-            border-radius: 20px;
+            border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px 24px;
+            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
+            padding: 40px 30px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 215, 0, 0.08);
+            border-radius: 50%;
         }
         
         .header h1 {
-            font-size: 28px;
+            color: white;
+            font-size: 32px;
             margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header p {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #FFD700;
+            color: #0D47A1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 12px;
         }
         
         .content {
-            padding: 30px 24px;
+            padding: 35px 30px;
+        }
+        
+        .effective-date {
+            background: #E3F2FD;
+            padding: 12px 18px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border-left: 4px solid #1976D2;
+            font-size: 14px;
+            color: #0D47A1;
+            font-weight: 500;
+        }
+        
+        .warning-box {
+            background: #FFEBEE;
+            padding: 18px;
+            border-radius: 16px;
+            margin: 20px 0;
+            border-left: 4px solid #F42A41;
+        }
+        
+        .warning-box p {
+            color: #C62828;
+            margin-bottom: 0;
+            font-weight: 500;
         }
         
         h2 {
-            color: #2c3e50;
+            color: #1976D2;
             font-size: 22px;
-            margin-top: 28px;
-            margin-bottom: 12px;
+            margin-top: 30px;
+            margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 2px solid #667eea;
+            border-bottom: 2px solid #FFD700;
+            display: inline-block;
         }
         
         h3 {
-            color: #34495e;
+            color: #1A1A2E;
             font-size: 18px;
             margin-top: 20px;
             margin-bottom: 10px;
         }
         
         p {
+            color: #4A4A4A;
             margin-bottom: 16px;
-            color: #555;
+            line-height: 1.7;
         }
         
         ul, ol {
-            margin: 12px 0 20px 24px;
+            margin: 12px 0 20px 25px;
         }
         
         li {
+            color: #4A4A4A;
             margin: 8px 0;
-            color: #555;
+            line-height: 1.6;
         }
         
-        .last-updated {
-            background: #f0f0f0;
-            padding: 12px 16px;
-            border-radius: 12px;
-            margin-bottom: 24px;
-            font-size: 14px;
-            color: #666;
-            text-align: center;
+        .prohibited-list {
+            background: #FFF8E1;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+        
+        .prohibited-list h4 {
+            color: #F57C00;
+            margin-bottom: 12px;
         }
         
         .contact-box {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-            padding: 20px;
-            border-radius: 16px;
-            margin: 24px 0;
-            border-left: 4px solid #667eea;
+            background: linear-gradient(135deg, #1976D2 0%, #0D47A1 100%);
+            padding: 25px;
+            border-radius: 20px;
+            margin: 30px 0 20px;
+            color: white;
+        }
+        
+        .contact-box h3 {
+            color: #FFD700;
+            margin-top: 0;
+            margin-bottom: 15px;
         }
         
         .contact-box p {
+            color: rgba(255,255,255,0.9);
             margin-bottom: 8px;
         }
         
-        .warning-box {
-            background: #fff3e0;
-            padding: 16px;
-            border-radius: 12px;
-            margin: 20px 0;
-            border-left: 4px solid #ff9800;
-        }
-        
-        .warning-box p {
-            margin-bottom: 0;
-            color: #e65100;
+        .contact-box a {
+            color: #FFD700;
+            text-decoration: none;
         }
         
         .footer {
-            background: #2c3e50;
+            background: #1A1A2E;
             color: white;
-            padding: 24px;
+            padding: 25px;
             text-align: center;
-            font-size: 14px;
+            font-size: 13px;
         }
         
         .footer a {
-            color: #667eea;
+            color: #FFD700;
             text-decoration: none;
+        }
+        
+        .footer-links {
+            margin-top: 15px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            margin: 0 10px;
+            font-size: 12px;
         }
         
         @media (max-width: 600px) {
             body {
-                padding: 8px;
+                padding: 10px;
             }
             .content {
-                padding: 20px 16px;
+                padding: 25px 20px;
+            }
+            .header h1 {
+                font-size: 26px;
             }
             h2 {
                 font-size: 20px;
@@ -136,23 +210,26 @@
         
         @media (prefers-color-scheme: dark) {
             body {
-                background-color: #121212;
+                background: linear-gradient(135deg, #1a1a2e 0%, #0d1b2a 100%);
             }
             .container {
-                background: #1e1e1e;
-            }
-            h2, h3 {
-                color: #e0e0e0;
+                background: #1e1e2e;
             }
             p, li {
-                color: #b0b0b0;
+                color: #c0c0c0;
             }
-            .last-updated {
-                background: #2a2a2a;
-                color: #aaa;
+            h3 {
+                color: #e0e0e0;
             }
-            .contact-box {
-                background: #2a2a2a;
+            .effective-date {
+                background: #2a2a3e;
+                color: #64B5F6;
+            }
+            .prohibited-list {
+                background: #2a2a3e;
+            }
+            .warning-box {
+                background: #3a1a1a;
             }
         }
     </style>
@@ -161,121 +238,185 @@
     <div class="container">
         <div class="header">
             <h1>📋 Terms of Service</h1>
-            <p>Bangla Hub - Connecting the Bengali Community</p>
+            <p>Please read these terms carefully</p>
+            <div class="badge">Effective April 12, 2026</div>
         </div>
         
         <div class="content">
-            <div class="last-updated">
-                Last Updated: April 6, 2026
+            <div class="effective-date">
+                📅 Last Updated: April 12, 2026 | ⚖️ Version: 2.0
             </div>
-
-            <p>Welcome to <strong>Bangla Hub</strong> ("we," "our," or "us"). By downloading, accessing, or using our mobile application, you agree to be bound by these Terms of Service ("Terms"). Please read them carefully.</p>
 
             <div class="warning-box">
-                <p><strong>⚠️ Important:</strong> By using Bangla Hub, you confirm that you have read, understood, and agree to these Terms. If you do not agree, please do not use the app.</p>
+                <p>⚠️ IMPORTANT: By downloading, accessing, or using Bangla Hub, you agree to be bound by these Terms of Service. If you do not agree, please do not use the app.</p>
             </div>
 
-            <h2>1. Acceptance of Terms</h2>
-            <p>By using Bangla Hub, you acknowledge that you have read, understood, and agree to these Terms. We may update these Terms from time to time, and continued use constitutes acceptance of changes.</p>
+            <p>Welcome to <strong>Bangla Hub</strong> ("we," "our," "us"). These Terms of Service ("Terms") govern your use of our mobile application and services. Bangla Hub is a community platform connecting Bengali communities through events, services, business networking, and educational resources.</p>
 
-            <h2>2. Eligibility</h2>
-            <p>You must be at least <strong>13 years old</strong> to use this app. Users between 13 and 18 must have permission from a parent or legal guardian. By using the app, you represent that you meet these requirements.</p>
+            <h2>1. ✅ Acceptance of Terms</h2>
+            <p>By creating an account, downloading, or using Bangla Hub, you acknowledge that you have read, understood, and agree to these Terms. We may update these Terms from time to time. Your continued use of the app after changes constitutes acceptance of the modified Terms.</p>
 
-            <h2>3. Account Registration</h2>
+            <h2>2. 👤 Eligibility</h2>
+            <p>To use Bangla Hub, you must:</p>
+            <ul>
+                <li>Be at least <strong>13 years old</strong></li>
+                <li>Have the legal capacity to enter into binding agreements</li>
+                <li>Not be prohibited from using our services by law</li>
+                <li>Provide accurate and complete information during registration</li>
+            </ul>
+            <p><strong>For users aged 13-18:</strong> You confirm that you have obtained parental or legal guardian permission to use this app.</p>
+
+            <h2>3. 🔐 Account Registration</h2>
             <p>To access certain features, you must create an account. You agree to:</p>
             <ul>
                 <li>Provide accurate, current, and complete information</li>
-                <li>Maintain the security of your account credentials</li>
+                <li>Maintain the security and confidentiality of your login credentials</li>
                 <li>Accept responsibility for all activities under your account</li>
-                <li>Notify us immediately of any unauthorized use</li>
-                <li>Not share your account with others</li>
+                <li>Notify us immediately of any unauthorized account use</li>
+                <li>Not share your account credentials with others</li>
+                <li>Not create multiple accounts for abusive purposes</li>
             </ul>
+            <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
 
-            <h2>4. User Content and Conduct</h2>
+            <h2>4. 📝 User Content and Conduct</h2>
             
-            <h3>4.1 Content You Post</h3>
-            <p>You retain ownership of content you post. By posting, you grant Bangla Hub a worldwide, non-exclusive, royalty-free license to display, distribute, and promote your content within the app.</p>
+            <h3>4.1 Content Ownership and License</h3>
+            <p>You retain ownership of all content you post on Bangla Hub. However, by posting content, you grant Bangla Hub a worldwide, non-exclusive, royalty-free license to:</p>
+            <ul>
+                <li>Display, distribute, and promote your content within the app</li>
+                <li>Store and backup your content on our servers</li>
+                <li>Use your content to improve our services</li>
+                <li>Share your content with other users as intended by the feature</li>
+            </ul>
 
             <h3>4.2 Prohibited Content</h3>
-            <p>You may <strong>NOT</strong> post content that:</p>
-            <ul>
-                <li>Is illegal, fraudulent, or deceptive</li>
-                <li>Contains hate speech, harassment, or threats</li>
-                <li>Infringes intellectual property rights</li>
-                <li>Contains malware or harmful code</li>
-                <li>Is sexually explicit or contains nudity</li>
-                <li>Contains violence or gore</li>
-                <li>Contains false or misleading information</li>
-                <li>Violates any applicable laws or regulations</li>
-                <li>Impersonates another person or entity</li>
-                <li>Contains spam or unsolicited advertising</li>
-            </ul>
+            <div class="prohibited-list">
+                <h4>🚫 You may NOT post content that:</h4>
+                <ul>
+                    <li>Is illegal, fraudulent, or deceptive</li>
+                    <li>Contains hate speech, harassment, threats, or bullying</li>
+                    <li>Infringes intellectual property rights (copyright, trademark)</li>
+                    <li>Contains malware, viruses, or harmful code</li>
+                    <li>Is sexually explicit or contains nudity</li>
+                    <li>Contains violence, gore, or disturbing imagery</li>
+                    <li>Contains false or misleading information</li>
+                    <li>Violates any applicable laws or regulations</li>
+                    <li>Impersonates another person or entity</li>
+                    <li>Contains spam, unsolicited advertising, or pyramid schemes</li>
+                    <li>Discloses others' personal information without consent (doxxing)</li>
+                    <li>Promotes self-harm, suicide, or eating disorders</li>
+                </ul>
+            </div>
 
             <h3>4.3 Event Posting Guidelines</h3>
-            <p>Events posted must be legitimate, accurately described, and comply with local laws. We reserve the right to remove any event that violates these Terms or is reported by users.</p>
-
-            <h3>4.4 Business and Service Listings</h3>
-            <p>Businesses and service providers must have valid licenses where required by law. We may verify information before approval. Misrepresentation of services may result in account termination.</p>
-
-            <h2>5. Community Guidelines</h2>
-            <p>All users must:</p>
+            <p>When posting events, you agree that:</p>
             <ul>
-                <li>Treat others with respect and kindness</li>
-                <li>Not spam or send unsolicited messages</li>
-                <li>Not impersonate others or fake identities</li>
-                <li>Not attempt to hack, disrupt, or damage the app</li>
-                <li>Not scrape, crawl, or collect user data without permission</li>
-                <li>Not post others' personal information without consent</li>
+                <li>Events must be legitimate and accurately described</li>
+                <li>You have the right to organize or promote the event</li>
+                <li>Event information (date, time, location) must be accurate</li>
+                <li>We may verify events before approval</li>
+                <li>We reserve the right to remove events that violate these Terms</li>
             </ul>
 
-            <h2>6. Content Moderation and Enforcement</h2>
-            <p>We reserve the right to:</p>
+            <h3>4.4 Business and Service Listings</h3>
+            <p>For business promotions, service provider listings, job postings, and business partner requests:</p>
+            <ul>
+                <li>You must have proper licenses and permits where required by law</li>
+                <li>Business information must be accurate and verifiable</li>
+                <li>We may verify information before approving listings</li>
+                <li>Misrepresentation of services may result in account termination</li>
+                <li>You are responsible for fulfilling any commitments made through the app</li>
+            </ul>
+
+            <h2>5. 🤝 Community Guidelines</h2>
+            <p>All users must follow these community guidelines:</p>
+            <ul>
+                <li>Treat others with respect and kindness</li>
+                <li>Do not spam or send unsolicited messages</li>
+                <li>Do not impersonate others or use fake identities</li>
+                <li>Do not attempt to hack, disrupt, or damage the app</li>
+                <li>Do not scrape, crawl, or collect user data without permission</li>
+                <li>Do not post others' personal information without consent</li>
+                <li>Do not use the app for illegal activities</li>
+                <li>Report inappropriate content or behavior to us</li>
+            </ul>
+
+            <h2>6. 🛡️ Content Moderation and Enforcement</h2>
+            <p>We reserve the right, but not the obligation, to:</p>
             <ul>
                 <li>Review, moderate, or remove any content at our discretion</li>
                 <li>Suspend or terminate accounts that violate these Terms</li>
-                <li>Take legal action for serious violations</li>
-                <li>Report illegal activity to authorities</li>
+                <li>Take legal action for serious or repeated violations</li>
+                <li>Report illegal activity to law enforcement authorities</li>
+                <li>Limit or restrict access to certain features</li>
             </ul>
-            <p>We are not obligated to monitor content but will make reasonable efforts to enforce these Terms.</p>
+            <p>We strive to enforce these Terms fairly but are not responsible for user-generated content.</p>
 
-            <h2>7. Prohibited Activities</h2>
+            <h2>7. 🚫 Prohibited Activities</h2>
             <p>The following activities are strictly prohibited:</p>
             <ul>
                 <li>Using the app for any illegal purpose</li>
-                <li>Attempting to interfere with app functionality</li>
-                <li>Reverse engineering or copying app code</li>
-                <li>Using automated systems to access the app</li>
-                <li>Scraping user data or content</li>
-                <li>Selling your account or access to the app</li>
+                <li>Attempting to interfere with app functionality or security</li>
+                <li>Reverse engineering, decompiling, or copying app code</li>
+                <li>Using automated systems (bots, scrapers) to access the app</li>
+                <li>Selling your account or transferring access without permission</li>
+                <li>Using the app to compete with our services</li>
+                <li>Circumventing any access or use restrictions</li>
+                <li>Uploading malicious code or attempting to compromise other users</li>
             </ul>
 
-            <h2>8. Intellectual Property</h2>
-            <p>The app, its design, logos, name "Bangla Hub", and all content (excluding user content) are owned by Bangla Hub and protected by copyright, trademark, and other laws. You may not copy, modify, distribute, or reverse-engineer the app.</p>
-
-            <h2>9. Third-Party Services</h2>
-            <p>The app uses third-party services including but not limited to:</p>
+            <h2>8. 💰 Payments and Subscriptions</h2>
+            <p>Currently, Bangla Hub is <strong>free to use</strong>. If we introduce premium features or subscriptions in the future:</p>
             <ul>
-                <li><strong>Firebase</strong> (Google) - Authentication and database</li>
-                <li><strong>Geocoding/Geolocator</strong> - Location services</li>
+                <li>We will notify users before implementing any charges</li>
+                <li>We will obtain explicit consent before charging</li>
+                <li>All payments will be processed through the App Store's payment system</li>
+                <li>Refunds will be handled according to App Store policies</li>
+                <li>We reserve the right to modify pricing with advance notice</li>
+            </ul>
+
+            <h2>9. 📱 App Store Terms</h2>
+            <p>This app is subject to Apple's <strong>App Store Terms of Use</strong>. In case of conflict between these Terms and Apple's terms regarding app distribution, Apple's terms prevail. You acknowledge that:</p>
+            <ul>
+                <li>Apple has no obligation to provide support or maintenance for this app</li>
+                <li>Apple is not responsible for any claims related to the app</li>
+                <li>Apple is not responsible for addressing user or third-party claims</li>
+            </ul>
+
+            <h2>10. 📄 Intellectual Property</h2>
+            <p>The app, including its design, logos, name "Bangla Hub", code, and all non-user content, is owned by Bangla Hub and protected by copyright, trademark, and other intellectual property laws. You may not:</p>
+            <ul>
+                <li>Copy, modify, or distribute app code or design</li>
+                <li>Use our trademarks without permission</li>
+                <li>Create derivative works based on the app</li>
+                <li>Remove any copyright or trademark notices</li>
+            </ul>
+
+            <h2>11. 🔗 Third-Party Services</h2>
+            <p>Bangla Hub integrates with third-party services including:</p>
+            <ul>
+                <li><strong>Firebase (Google)</strong> - Authentication, database, storage</li>
+                <li><strong>Geolocator / Geocoding</strong> - Location services</li>
                 <li><strong>Apple Maps / Google Maps</strong> - Map integration</li>
             </ul>
-            <p>These services have their own terms and privacy policies, which apply separately.</p>
+            <p>These services have their own terms and privacy policies. We are not responsible for their practices.</p>
 
-            <h2>10. Payment and Subscriptions</h2>
-            <p>Currently, Bangla Hub is <strong>free to use</strong>. If we introduce premium features or subscriptions in the future, we will notify users and obtain consent before charging. All payments will be processed through the App Store's payment system.</p>
-
-            <h2>11. Disclaimers</h2>
-            <p>The app is provided <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> without warranties. We do not guarantee:</p>
+            <h2>12. ⚠️ Disclaimers</h2>
+            <div class="warning-box">
+                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND.</p>
+            </div>
+            <p>We do not guarantee:</p>
             <ul>
                 <li>Uninterrupted or error-free service</li>
                 <li>Accuracy, reliability, or completeness of user-posted content</li>
                 <li>Suitability or quality of business, service, or event listings</li>
                 <li>Any specific outcomes from using the app</li>
                 <li>That the app will meet your requirements</li>
+                <li>Security against all potential threats</li>
             </ul>
 
-            <h2>12. Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, <strong>Bangla Hub and its owners, employees, and affiliates are not liable for:</strong></p>
+            <h2>13. 📉 Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, <strong>BANGLA HUB AND ITS OWNERS, EMPLOYEES, AND AFFILIATES ARE NOT LIABLE FOR:</strong></p>
             <ul>
                 <li>Indirect, incidental, special, consequential, or punitive damages</li>
                 <li>Loss of data, revenue, profits, or business opportunities</li>
@@ -283,80 +424,104 @@
                 <li>Any harm arising from user-posted content</li>
                 <li>Unauthorized access to your account</li>
                 <li>Service interruptions or data loss</li>
+                <li>Emotional distress or reputational harm</li>
             </ul>
-            <p>Our total liability shall not exceed the amount you paid us (if any) in the past 12 months.</p>
+            <p>Our total liability shall not exceed the amount you paid us (if any) in the past 12 months. Some jurisdictions do not allow certain liability limitations, so these may not apply to you.</p>
 
-            <h2>13. Indemnification</h2>
-            <p>You agree to <strong>indemnify and hold harmless</strong> Bangla Hub and its owners from any claims, damages, losses, or expenses arising from:</p>
+            <h2>14. 🛡️ Indemnification</h2>
+            <p>You agree to <strong>indemnify and hold harmless</strong> Bangla Hub and its owners from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
             <ul>
                 <li>Your violation of these Terms</li>
                 <li>Your user content</li>
                 <li>Your use of the app</li>
                 <li>Your violation of any laws or third-party rights</li>
+                <li>Your interactions with other users</li>
             </ul>
 
-            <h2>14. Termination</h2>
-            <p>You may delete your account at any time through the app settings. We may suspend or terminate your account for violations without notice, including:</p>
+            <h2>15. 🗑️ Termination</h2>
+            <p><strong>You may delete your account at any time</strong> through:</p>
             <ul>
-                <li>Violation of these Terms</li>
-                <li>Fraudulent or illegal activity</li>
-                <li>Request by law enforcement</li>
-                <li>Extended inactivity</li>
+                <li>App Settings → Delete Account</li>
+                <li>Contacting support at info@banglahub.us</li>
             </ul>
-            <p>Upon termination, your right to use the app ends immediately.</p>
+            <p>We may suspend or terminate your account without notice for violations including:</p>
+            <ul>
+                <li>Violation of these Terms or Community Guidelines</li>
+                <li>Fraudulent, illegal, or harmful activity</li>
+                <li>Request by law enforcement</li>
+                <li>Extended inactivity (over 2 years)</li>
+                <li>Creating risk or legal exposure for us or other users</li>
+            </ul>
+            <p>Upon termination, your right to use the app ends immediately, and we may delete your account and associated data.</p>
 
-            <h2>15. Changes to Terms</h2>
+            <h2>16. 📢 Changes to Terms</h2>
             <p>We may modify these Terms periodically. Material changes will be notified via:</p>
             <ul>
-                <li>Email notification</li>
                 <li>In-app notification</li>
-                <li>App update description</li>
+                <li>Email notification (if you have provided email)</li>
+                <li>App store update description</li>
             </ul>
             <p>Continued use after changes constitutes acceptance. If you disagree, you must stop using the app and delete your account.</p>
 
-            <h2>16. Governing Law</h2>
-            <p>These Terms are governed by the laws of <strong>Bangladesh</strong>. Any disputes arising from these Terms or the app shall be resolved exclusively in the courts of <strong>Dhaka, Bangladesh</strong>.</p>
+            <h2>17. ⚖️ Governing Law</h2>
+            <p>These Terms are governed by the laws of <strong>Bangladesh</strong>, without regard to conflict of law principles. Any disputes arising from these Terms or the app shall be resolved exclusively in the courts of <strong>Dhaka, Bangladesh</strong>.</p>
 
-            <h2>17. Dispute Resolution</h2>
-            <p>Before filing a lawsuit, you agree to contact us to resolve disputes informally. If unresolved, disputes will be resolved through binding arbitration or small claims court, at your election.</p>
+            <h2>18. ⚖️ Dispute Resolution</h2>
+            <p>Before filing a lawsuit, you agree to contact us to resolve disputes informally. If unresolved after 60 days, disputes will be resolved through binding arbitration in accordance with Bangladesh arbitration rules. Small claims court may be used at your election.</p>
 
-            <h2>18. Apple App Store Terms</h2>
-            <p>This app is subject to Apple's <strong>App Store Terms of Use</strong>. In case of conflict, Apple's terms prevail regarding app distribution. You acknowledge that Apple has no obligation to provide support or maintenance for this app.</p>
-
-            <h2>19. DMCA Compliance</h2>
-            <p>If you believe content infringes your copyright, please contact us with:</p>
+            <h2>19. 🔒 DMCA Compliance</h2>
+            <p>If you believe content on Bangla Hub infringes your copyright, please contact us with:</p>
             <ul>
-                <li>Identification of the copyrighted work</li>
-                <li>Identification of the infringing content</li>
-                <li>Your contact information</li>
-                <li>A good faith statement</li>
+                <li>Identification of the copyrighted work claimed to be infringed</li>
+                <li>Identification of the infringing content and its location</li>
+                <li>Your contact information (name, address, email, phone)</li>
+                <li>A good faith statement that the use is not authorized</li>
+                <li>A statement under penalty of perjury that your notice is accurate</li>
+                <li>Your physical or electronic signature</li>
             </ul>
+            <p>Send DMCA notices to: <strong>legal@banglahub.us</strong></p>
 
-            <h2>20. Severability</h2>
-            <p>If any provision of these Terms is found unenforceable, the remaining provisions remain in full force and effect.</p>
+            <h2>20. 🔗 Severability</h2>
+            <p>If any provision of these Terms is found unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
 
-            <h2>21. Entire Agreement</h2>
-            <p>These Terms constitute the entire agreement between you and Bangla Hub regarding app use, superseding any prior agreements.</p>
+            <h2>21. 📋 Entire Agreement</h2>
+            <p>These Terms constitute the entire agreement between you and Bangla Hub regarding app use, superseding any prior agreements, communications, or understandings.</p>
 
+            <h2>22. 📧 Contact Us</h2>
             <div class="contact-box">
-                <h3 style="margin-top: 0; border-bottom: none;">📞 Contact Us</h3>
-                <p><strong>Email:</strong> support@banglahub.com</p>
-                <p><strong>Legal Inquiries:</strong> legal@banglahub.com</p>
-                <p><strong>Response Time:</strong> Within 2-3 business days</p>
+                <h3>📞 Bangla Hub Support</h3>
+                <p><strong>General Support:</strong> <a href="mailto:info@banglahub.us">info@banglahub.us</a></p>
+                <p><strong>Legal Inquiries:</strong> <a href="mailto:legal@banglahub.us">legal@banglahub.us</a></p>
+                <p><strong>DMCA Notices:</strong> <a href="mailto:dmca@banglahub.us">dmca@banglahub.us</a></p>
+                <p><strong>Response Time:</strong> 2-3 business days</p>
+                <p><strong>Address:</strong> [Your Business Address]</p>
             </div>
 
             <div class="warning-box">
-                <p><strong>⚠️ For emergencies or immediate assistance:</strong> Please contact local authorities. Bangla Hub is not a substitute for emergency services.</p>
+                <p>⚠️ For emergencies or immediate assistance: Please contact local authorities. Bangla Hub is not a substitute for emergency services. If you are in crisis, please call 911 or your local emergency number.</p>
             </div>
+
+            <h2>📌 Quick Summary</h2>
+            <ul>
+                <li>✅ You must be 13+ to use Bangla Hub</li>
+                <li>✅ Be respectful and follow community guidelines</li>
+                <li>✅ Don't post illegal or harmful content</li>
+                <li>✅ We can remove content or terminate accounts for violations</li>
+                <li>✅ The app is provided "as is" without warranties</li>
+                <li>✅ Our liability is limited</li>
+                <li>✅ You can delete your account anytime</li>
+                <li>✅ Contact us with questions or concerns</li>
+            </ul>
         </div>
         
         <div class="footer">
             <p>© 2026 Bangla Hub. All rights reserved.</p>
-            <p>Connecting the Bengali Community Worldwide 🇧🇩</p>
-            <p style="margin-top: 12px; font-size: 12px;">
-                <a href="privacy_policy.html">Privacy Policy</a> | 
-                <a href="terms_of_service.html">Terms of Service</a>
-            </p>
+            <p>🇧🇩 Connecting the Bengali Community Worldwide</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="mailto:info@banglahub.us">Contact Us</a>
+            </div>
         </div>
     </div>
 </body>
